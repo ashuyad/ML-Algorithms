@@ -11,7 +11,7 @@ This repository contains a collection of machine learning algorithms and practic
 - [Grid Search](#grid-search)
 - [Hierarchical Clustering](#hierarchical-clustering)
 - [Image Classification using CNN](#image-classification-using-cnn)
-
+- [K fold cross validation](#k-fold-cross-validation)
 ## Overview
 
 This repo includes implementations and experiments covering:
@@ -25,6 +25,9 @@ This repo includes implementations and experiments covering:
 - Convolutional neural networks
 
 Each project is stored in its own folder with a notebook and the required dataset or supporting files.
+
+## Apriori
+The Apriori algorithm is a classic unsupervised machine learning algorithm used for frequent itemset mining and association rule learning. 
 
 ## Repository Structure
 
