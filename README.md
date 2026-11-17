@@ -1,61 +1,55 @@
 # ML Algorithms
 
-This repository contains a collection of machine learning algorithms and practical ML experiments implemented in Python using Jupyter Notebooks. The goal is to explore, understand, and apply common machine learning techniques through hands-on examples.
+A collection of machine-learning notebooks and experiments implemented in Python. Each project lives in its own directory and explores an algorithm or technique, often with a sample dataset.
 
-## Table of Contents
+> **Purpose:** learning and experimentation. Results and code may need adaptation before use in production.
 
-- [Apriori](#apriori)
-- [Bag-of-Word Algorithm](#bag-of-word-algorithm)
-- [CATBoost](#catboost)
-- [Customer Churn using ANN](#customer-churn-using-ann)
-- [Grid Search](#grid-search)
-- [Hierarchical Clustering](#hierarchical-clustering)
-- [Image Classification using CNN](#image-classification-using-cnn)
-- [K fold cross validation](#k-fold-cross-validation)
-## Overview
+## Projects
 
-This repo includes implementations and experiments covering:
+| Project | Description |
+| --- | --- |
+| [Apriori](Apriori/) | Frequent itemset mining and association-rule learning. |
+| [Bag-of-Word Algorithm](Bag-of-Word-Algorithm/) | Text representation using the bag-of-words approach. |
+| [CATBoost](CATBoost/) | Gradient boosting with CatBoost. |
+| [Customer Churn using ANN](Customer-Churn-using-ANN/) | Customer churn prediction with an artificial neural network. |
+| [Grid Search](Grid-Search/) | Model hyperparameter tuning with grid search. |
+| [Hierarchical Clustering](Hierarchical-Clustering/) | Unsupervised clustering with a hierarchical method. |
+| [Image Classification using CNN](Image-Classification-using-CNN/) | Image classification with a convolutional neural network. |
+| [K-fold Cross-Validation](K-fold-Cross-Validation/) | Model evaluation by splitting data into *k* folds and rotating the validation fold. |
+| [Kernel PCA](Kernel-PCA/) | Nonlinear dimensionality reduction using kernel principal component analysis. |
+| [Linear Discriminant Analysis](Least-Discriminant-Analysis/) | Dimensionality reduction and classification with discriminant analysis. |
+| [MNIST ANN (PyTorch)](MNIST-ANN%28Pytorch%29/) | Neural-network experiments on the MNIST dataset using PyTorch. |
+| [Principal Component Analysis](Principal-Component-Analysis/) | Dimensionality reduction using PCA. |
+| [PyTorch RNN](Pytorch-RNN/) | Recurrent neural network experiments using PyTorch. |
+| [Thompson Sampling](Thompson-Sampling-Algorithm/) | A multi-armed bandit strategy for balancing exploration and exploitation. |
+| [Upper Confidence Bound](Upper-Confidence-Bound/) | A multi-armed bandit strategy based on confidence bounds. |
+| [XGBoost](XGBoost/) | Gradient-boosted decision trees using XGBoost. |
 
-- Association rule learning
-- Natural language processing
-- Gradient boosting
-- Artificial neural networks
-- Hyperparameter tuning
-- Clustering
-- Convolutional neural networks
+## Getting started
 
-Each project is stored in its own folder with a notebook and the required dataset or supporting files.
+1. Clone the repository:
 
-## Apriori
-The Apriori algorithm is a classic unsupervised machine learning algorithm used for frequent itemset mining and association rule learning. 
+   ```bash
+   git clone https://github.com/ashuyad/ML-Algorithms.git
+   cd ML-Algorithms
+   ```
 
-## Repository Structure
+2. Install Jupyter if it is not already available in your Python environment:
 
-```text
-ML-Algorithms/
-├── Apriori/
-│   ├── Apriori.ipynb
-│   └── Market_Basket_Optimisation.csv
-├── Bag-of-Word-Algorithm/
-│   ├── Bag-of-Words-Algorithm.ipynb
-│   └── Restaurant_Reviews.tsv
-├── CATBoost/
-│   ├── catboost-Algo.ipynb
-│   ├── Data.csv
-│   └── catboost_info/
-├── Customer-Churn-using-ANN/
-│   ├── Customer-Churn-ANN.ipynb
-│   └── Churn_Modelling.csv
-├── Grid-Search/
-│   ├── Grid-Search.ipynb
-│   └── Social_Network_Ads.csv
-├── Hierarchical-Clustering/
-│   ├── Hierarchical-Clustering.ipynb
-│   ├── Mall_Customers.csv
-│   ├── README.md
-│   └── requirements.txt
-├── Image-Classification-using-CNN/
-│   ├── Image-Classification-using-CNN.ipynb
-│   └── dataset/
-├── .gitignore
-└── README.md
+   ```bash
+   python -m pip install jupyter
+   ```
+
+3. Start Jupyter and open the notebook in the project directory you want to explore:
+
+   ```bash
+   jupyter notebook
+   ```
+
+Individual notebooks may require additional libraries. Check the imports and any project-specific `requirements.txt` before running a notebook. Some projects include datasets in their directories; follow the notebook's instructions for any data it expects.
+
+## Suggested workflow
+
+- Start with a project directory and read through its notebook from top to bottom.
+- Run the cells in order, and inspect the data preparation, model, and evaluation steps.
+- Experiment with parameters or datasets, and compare the results.
